@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') { 
+            steps {
+                echo 'Build' 
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'Test'
+                
+            }
+        }
+        stage('Sonar scanning') { 
+            steps {
+                echo 'Sonar scanning'
+              
+        
+            }
+        }
+    
+    stage('Publish to artifactory') { 
+            steps {
+               
+                echo 'Publish to artifactory'
+    
+    
+          }
+ 
+
+       } 
+    
+stage('Deploy to dev') { 
+            steps {
+               
+                echo 'deploy to dev'
+            }
+
+
+          }
+
+
+    
+    }
+
+}
